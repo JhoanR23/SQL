@@ -1,0 +1,47 @@
+/*store apple
+This that are required for the problem
+id
+product
+price
+color
+stock
+
+ideas for items:
+laptop
+desktop
+iphone
+watch
+airpods
+tv
+speaker
+bands
+tvshow
+*/
+
+--This is where the table is being created. adding an id, product, color, price, stock, etc--
+CREATE TABLE store (id INTEGER PRIMARY KEY, product TEXT, price INTEGER, color TEXT, stock INTEGER);
+
+--Here is adding the data into the table--
+INSERT INTO store VALUES 
+(1,"IPhone 13",899,"red", 4 ),
+(2,"IPhone 13 pro MAX",1999,"white", 3 ),
+(3,"IPhone 13 pro",999,"red", 4 ),
+(4,"IPhone 14",900,"gery", 4 ),
+(5,"IPhone 15",1000,"black", 4 ),
+(6,"IPhone 16",6022,"red", 4 ),
+(7,"IPhone 17",1999,"red", 5 ),
+(8,"IPhone 18",3999,"red", 2 ),
+(9,"IPhone 19",2999,"red", 67 ),
+(10,"IPhone 5",999,"red", 5 ),
+(11,"IPhone 6",399,"red", 9 ),
+(12,"IPhone 7",499,"red", 0 ),
+(13,"IPhone 10",899,"red", 2 ),
+(14,"IPhone 5s",699,"red", 3 ),
+(15,"IPhone 6s MAX",799,"red", 4 );
+
+--Here you are ordering the table my price you could also use acs or des--
+SELECT * FROM store ORDER BY price;
+
+--telling us what is the most expensive item from the table--
+SELECT MAX(price) FROM store
+
